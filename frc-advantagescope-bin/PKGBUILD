@@ -1,0 +1,33 @@
+# Maintainer: Jay Jackson <jj@jjay.dev>
+pkgname=frc-advantagescope-bin
+_pkgname=advantagescope
+pkgver=4.1.4
+pkgrel=1
+pkgdesc="Robot telemetry application for FRC"
+arch=('x86_64')
+url="https://docs.advantagescope.org/"
+license=('MIT')
+groups=()
+depends=()
+makedepends=()
+checkdepends=()
+optdepends=()
+provides=()
+conflicts=()
+replaces=()
+backup=()
+options=()
+install=
+changelog=
+source=("https://github.com/Mechanical-Advantage/AdvantageScope/releases/download/v${pkgver}/advantagescope-linux-x64-v${pkgver}.deb")
+noextract=()
+md5sums=('57599019f32a8d04a1e3c562309f0332') #generate with 'makepkg -g'
+
+prepare() {
+    mkdir -p "${srcdir}/dist"
+    tar -xJvf "${srcdir}/data.tar.xz" -C "${srcdir}/dist"
+}
+
+package() {
+    cp -r "${srcdir}/dist"/* "${pkgdir}"
+}
