@@ -1,7 +1,7 @@
 # Maintainer: Jay Jackson <jj@jjay.dev>
 pkgname=frc-elastic-dashboard-bin
 _pkgname=elastic_dashboard
-pkgver=2025.1.1
+pkgver=2025.2.0
 pkgrel=1
 pkgdesc="A simple and modern dashboard for FRC"
 arch=('x86_64')
@@ -21,7 +21,7 @@ install=
 changelog=
 source=("elastic-linux-${pkgver}.zip::https://github.com/Gold872/elastic-dashboard/releases/download/v${pkgver}/Elastic-Linux.zip")
 noextract=()
-md5sums=('88741fad460cf66bbd38cd97f615b91e') #generate with 'makepkg -g'
+md5sums=('c913e674cd2a0859b3bb204631affe77') #generate with 'makepkg -g'
 
 package() {
     install -d "$pkgdir/opt/$_pkgname"
