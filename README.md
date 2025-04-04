@@ -6,8 +6,9 @@
 
 This repository includes `PKGBUILD` scripts for the following tools:
 
--   **frc-elastic-dashboard-bin**: A prebuilt package for the [Elastic Dashboard](https://github.com/Gold872/elastic-dashboard).
--   **frc-advantagescope-bin**: A prebuilt package for the [Advantage Scope](https://docs.advantagescope.org/) data visualization tool.
+- **frc-elastic-dashboard-bin**: A prebuilt package for the [Elastic Dashboard](https://github.com/Gold872/elastic-dashboard).
+- **frc-advantagescope-bin**: A prebuilt package for the [Advantage Scope](https://docs.advantagescope.org/) data visualization tool.
+- **frc-pathplanner-bin**: A prebuilt package for the [PathPlanner](https://pathplanner.dev/home.html) path planning tool.
 
 ## Installation
 
